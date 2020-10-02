@@ -55,7 +55,7 @@ export default class Model {
         (item) => item.id === lastCard.id && item.title === lastCard.title
       );
       let inD = this.done.indexOf(card);
-      this.done.splice(inD, 0, [newCard]);
+      this.done.splice(inD, 0, newCard);
     }
   }
 

@@ -48,8 +48,9 @@ body {
   height: 20px;
 }
 
-.plus-card {
-  margin-right: 10px;
+.add-card-title {
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .add-card-form {

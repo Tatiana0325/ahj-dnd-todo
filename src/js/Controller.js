@@ -60,7 +60,7 @@ export default class Controller {
         <div><h4>TODO</h4></div>
         ${this.getCont(todo).outerHTML}
         <div class="adding-card">
-          <a href="" onclick="return false" class="add-card-title"><img src="./img/plus.png" alt="Adding" class="plus-card" />Add another card</a>
+          <a href="" onclick="return false" class="add-card-title">Add another card</a>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ export default class Controller {
         <div><h4>IN PROGRESS</h4></div>
         ${this.getCont(progress).outerHTML}
         <div class="adding-card">
-          <a href="" onclick="return false" class="add-card-title"><img src="./img/plus.png" alt="Adding" class="plus-card" />Add another card</a>
+          <a href="" onclick="return false" class="add-card-title">Add another card</a>
         </div>
       </div>
 
@@ -76,7 +76,7 @@ export default class Controller {
         <div><h4>DONE</h4></div>
         ${this.getCont(done).outerHTML}
         <div class="adding-card">
-          <a href="" onclick="return false" class="add-card-title"><img src="./img/plus.png" alt="Adding" class="plus-card" />Add another card</a>
+          <a href="" onclick="return false" class="add-card-title">Add another card</a>
         </div>
       </div>
     `;
@@ -200,7 +200,6 @@ export default class Controller {
 
   addListenerAdd() {
     this.container.addEventListener("click", (event) => {
-      //this.getMark(todo, progress, done);
       const { target } = event;
       target.innerHTML = `
           <div class=add-card-form>
