@@ -144,6 +144,8 @@ export default class Controller {
         id: this.id,
       };
 
+      this.id++;
+
       if (
         area.classList.contains("cont") ||
         area.closest(".column").querySelector(".cont")
@@ -254,7 +256,6 @@ export default class Controller {
             Number(el.getAttribute("id")),
             parent.classList[0]
           );
-          this.id--;
           this.container.innerHTML = "";
           this.start();
         });
